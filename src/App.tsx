@@ -6,6 +6,7 @@ import Sections from "./components/Sections"
 import FloatingHearts from "./components/FloatingHearts"
 import { useGameState } from "./hooks/useGameState"
 import type { TabId, Achievement } from "./types"
+import FarewellLetter from "./components/FarewellLetter"
 
 export default function App() {
   const [booted, setBooted] = useState(false)
@@ -144,6 +145,7 @@ export default function App() {
         achievementCount={unlockedAchievements.length}
         totalAchievements={allAchievements.length}
       />
+      <FarewellLetter />
     </div>
   )
 }
